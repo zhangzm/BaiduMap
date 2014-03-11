@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiduMap.Droid", "BaiduMap.Droid\BaiduMap.Droid.csproj", "{9D93FE45-FDFE-4F17-8F56-0A00069ADDCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiduMap.Sample", "BaiduMap.Sample\BaiduMap.Sample.csproj", "{20A75214-5BC2-485D-B213-D49D99BBC0AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D93FE45-FDFE-4F17-8F56-0A00069ADDCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D93FE45-FDFE-4F17-8F56-0A00069ADDCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D93FE45-FDFE-4F17-8F56-0A00069ADDCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D93FE45-FDFE-4F17-8F56-0A00069ADDCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20A75214-5BC2-485D-B213-D49D99BBC0AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20A75214-5BC2-485D-B213-D49D99BBC0AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20A75214-5BC2-485D-B213-D49D99BBC0AA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{20A75214-5BC2-485D-B213-D49D99BBC0AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20A75214-5BC2-485D-B213-D49D99BBC0AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20A75214-5BC2-485D-B213-D49D99BBC0AA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
