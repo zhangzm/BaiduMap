@@ -9,7 +9,6 @@ using Android.OS;
 using Com.Baidu.Mapapi.Map;
 using Com.Baidu.Platform.Comapi.Basestruct;
 using BaiduMap.Sample.Map;
-using Com.Baidu.Mapapi.Panorama;
 
 namespace BaiduMap.Sample
 {
@@ -34,12 +33,12 @@ namespace BaiduMap.Sample
                 //用给定的经纬度构造一个GeoPoint，单位是微度 (度 * 1E6)  
                 mMapController.SetCenter(point);//设置地图中心点  
                 mMapController.SetZoom(18);//设置地图zoom级别 
-
                 MyLocationOverlay overlay = new MyLocationOverlay(mMapView);
                 overlay.SetData(new LocationData() { Latitude = location.Latitude, Longitude = location.Longitude, Direction = 2.0f });
                 mMapView.Overlays.Add(overlay);
                 mMapView.Refresh();
                 mMapView.Controller.AnimateTo(point);
+                //PanoramaView
             };
 
         }

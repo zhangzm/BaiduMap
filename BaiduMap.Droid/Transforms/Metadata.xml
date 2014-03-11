@@ -7,7 +7,18 @@
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
 
+  <remove-node path="/api/package[@name='com.baidu.location']/class[@name='BDLocation']/field[@name='mAddr']"></remove-node>
+  <remove-node path="/api/package[@name='com.baidu.location']/class[@name='BDNotifyListener']/field[@name='mNotifyCache']"></remove-node>
+  <remove-node path="/api/package[@name='com.baidu.mapapi']/class[@name='BMapManager']/method[@name='onGetPermissionCheckResult']"></remove-node>
+  <remove-node path="/api/package[@name='com.baidu.mapapi.utils']/class[@name='PermissionCheck']/method[@name='praseResult']"></remove-node>
+  <remove-node path="/api/package[@name='com.baidu.mapapi.utils']/class[@name='PermissionCheck']/method[@name='setPermissionCheckResultListener']"></remove-node>
+  <remove-node path="/api/package[@name='com.baidu.mapapi.map']/class[@name='LocationData']/method[@name='clone' and count(parameter)=0]"></remove-node>
+
+
   <attr path="/api/package[@name='com.baidu.mapapi']/class[@name='VersionInfo']/field[@name='VERSION_INFO']" name="managedName">VERSION_INFO</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapapi']/class[@name='BMapManager']" name="extends">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='MapFragment']" name="extends">Android.Support.V4.App.Fragment</attr>
   <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='Graphic']" name="extends">Java.Lang.Object</attr>
   <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='GraphicsOverlay']" name="extends">Java.Lang.Object</attr>
   <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='Ground']" name="extends">Java.Lang.Object</attr>
@@ -18,7 +29,29 @@
   <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='TextItem']" name="extends">Java.Lang.Object</attr>
   <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='TextOverlay']" name="extends">Java.Lang.Object</attr>
   <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='RouteOverlay']" name="extends">Com.Baidu.Mapapi.Map.ItemizedOverlay</attr>
-  <attr path="/api/package[@name='com.baidu.mapapi.panorama']/class[@name='PanoramaView']" name="extends">Android.Views.View</attr>
 
+  <attr path="/api/package[@name='com.baidu.mapapi.panorama']" name="managedName">Com.Baidu.Mapapi.Panoramas</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.panorama']/class[@name='PanoramaView']" name="extends">Android.Opengl.GLSurfaceView</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.panorama']/class[@name='PanoramaOverlay']" name="extends">Com.Baidu.Mapapi.Map.Overlay</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.panorama']/class[@name='PanoramaMarker']" name="extends">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.search']/class[@name='PlaceCaterActivity']" name="extends">Java.Lang.Object</attr>
+  
+ 
   <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='MapView']/method[@name='getOverlays' and count(parameter)=0]" name="managedReturn">System.Collections.Generic.IList&lt;Com.Baidu.Mapapi.Map.Overlay&gt;</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.panorama']/class[@name='PanoramaOverlay']/method[@name='getAllMarker'and count(parameter)=0]" name="managedReturn">System.Collections.Generic.IList&lt;Com.Baidu.Mapapi.Panoramas.PanoramaMarker&gt;</attr>
+
+  <attr path="/api/package[@name='com.baidu.location']/class[@name='LocationClientOption']/field[@name='a']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.baidu.location']/class[@name='LocationClientOption']/field[@name='byte']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.baidu.location']/class[@name='LocationClientOption']/field[@name='case']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.baidu.location']/class[@name='LocationClientOption']/field[@name='char']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.baidu.location']/class[@name='LocationClientOption']/field[@name='do']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.baidu.location']/class[@name='LocationClientOption']/field[@name='else']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.baidu.location']/class[@name='LocationClientOption']/field[@name='for']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.baidu.location']/class[@name='LocationClientOption']/field[@name='goto']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.baidu.location']/class[@name='LocationClientOption']/field[@name='if']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.baidu.location']/class[@name='LocationClientOption']/field[@name='int']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.baidu.location']/class[@name='LocationClientOption']/field[@name='long']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.baidu.location']/class[@name='LocationClientOption']/field[@name='new']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.baidu.location']/class[@name='LocationClientOption']/field[@name='try']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.baidu.location']/class[@name='LocationClientOption']/field[@name='void']" name="visibility">public</attr>
 </metadata>
