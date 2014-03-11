@@ -36,8 +36,12 @@
     <Reference Include="Mono.Android.Support.v4" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.Serialization" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Additions\ItemizedOverlay.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -55,8 +59,12 @@
   <ItemGroup>
     <EmbeddedJar Include="Jars\locSDK_3.1.jar" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Additions\" />
+    <EmbeddedNativeLibrary Include="libs\armeabi-v7a\libBaiduMapSDK_v2_4_0.so" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedNativeLibrary Include="libs\armeabi-v7a\liblocSDK3.so" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <PropertyGroup>

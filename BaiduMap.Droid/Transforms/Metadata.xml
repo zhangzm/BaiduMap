@@ -7,5 +7,18 @@
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
 
-  <attr  path="/api/package[@name='com.baidu.mapapi']/class[@name='VersionInfo']/field[@name='VERSION_INFO']" name="managedName">VERSION_INFO</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi']/class[@name='VersionInfo']/field[@name='VERSION_INFO']" name="managedName">VERSION_INFO</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='Graphic']" name="extends">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='GraphicsOverlay']" name="extends">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='Ground']" name="extends">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='GroundOverlay']" name="extends">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='ItemizedOverlay']" name="extends">Com.Baidu.Mapapi.Map.Overlay</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='Overlay']" name="extends">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='OverlayItem']" name="extends">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='TextItem']" name="extends">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='TextOverlay']" name="extends">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='RouteOverlay']" name="extends">Com.Baidu.Mapapi.Map.ItemizedOverlay</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.panorama']/class[@name='PanoramaView']" name="extends">Android.Views.View</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='MapView']/method[@name='getOverlays' and count(parameter)=0]" name="managedReturn">System.Collections.Generic.IList&lt;Com.Baidu.Mapapi.Map.Overlay&gt;</attr>
 </metadata>
