@@ -13,9 +13,13 @@
   <remove-node path="/api/package[@name='com.baidu.mapapi.utils']/class[@name='PermissionCheck']/method[@name='praseResult']"></remove-node>
   <remove-node path="/api/package[@name='com.baidu.mapapi.utils']/class[@name='PermissionCheck']/method[@name='setPermissionCheckResultListener']"></remove-node>
   <remove-node path="/api/package[@name='com.baidu.mapapi.map']/class[@name='LocationData']/method[@name='clone' and count(parameter)=0]"></remove-node>
-
-
+  <remove-node path="/api/package[@name='com.baidu.platform.comjni.map.basemap']/class[@name='BaseMapCallback']/method[@name='SetMapCallback']"></remove-node>
+  <remove-node path="/api/package[@name='com.baidu.vi']/class[@name='VDeviceAPI']/method[@name='getNetworkInfo']"></remove-node>
+  <remove-node path="/api/package[@name='com.baidu.mapapi.map']/class[@name='MapView.LayoutParams']"></remove-node>
+  <remove-node path="/api/package[@name='com.baidu.platform.comapi.map.base']/class[@name='MapRenderer']/constructor[count(parameter)=2]"></remove-node>
+  
   <attr path="/api/package[@name='com.baidu.mapapi']/class[@name='VersionInfo']/field[@name='VERSION_INFO']" name="managedName">VERSION_INFO</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi']/class[@name='VersionInfo']/field[@name='VERSION_DESC']" name="managedName">VERSION_DESC</attr>
 
   <attr path="/api/package[@name='com.baidu.mapapi']/class[@name='BMapManager']" name="extends">Java.Lang.Object</attr>
   <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='MapFragment']" name="extends">Android.Support.V4.App.Fragment</attr>

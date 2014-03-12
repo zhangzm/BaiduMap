@@ -42,8 +42,8 @@
     <Reference Include="System.Xml.Serialization" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Additions\GLSurfaceViewDoubleTapGestureKeyListener.cs" />
     <Compile Include="Additions\ItemizedOverlay.cs" />
+    <Compile Include="Additions\MapRenderer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,7 +61,9 @@
   <ItemGroup>
     <EmbeddedJar Include="Jars\locSDK_3.1.jar" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="Additions\PermissionCheck.cs" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedNativeLibrary Include="libs\armeabi-v7a\libBaiduMapSDK_v2_4_0.so" />
   </ItemGroup>
